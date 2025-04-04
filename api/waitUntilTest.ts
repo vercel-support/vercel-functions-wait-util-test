@@ -1,6 +1,6 @@
 import { waitUntil } from '@vercel/functions';
 
-export function GET(request: Request) {
+export async function GET(request: Request) {
   waitUntil(
     (async () => {
       const promise = new Promise((resolve) =>
